@@ -1,0 +1,5 @@
+.dashboard-container {
+    height: calc( 100vh - 50px);
+    box-sizing: border-box;
+    background: darksalmon;
+}

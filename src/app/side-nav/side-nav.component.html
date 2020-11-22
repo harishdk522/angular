@@ -1,0 +1,6 @@
+<div class="nav flex-column sidenav-container">
+    <div class="nav-item" *ngFor="let item of navigations; let i=index;">
+        <p class="nav-link" *ngIf="i == 0" (click)="handleClickedNav(item.name, $event)">{{item.dName}}</p>
+        <p class="nav-link"*ngIf="i!= 0" (click)="handleClickedNav(item.name, $event)">{{item.dName}}</p>
+    </div>
+</div>

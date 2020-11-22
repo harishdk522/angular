@@ -1,0 +1,9 @@
+<app-header (loggedOut)="logout()" [uname]="username"></app-header>
+<div class="row dashboard-container">
+    <div class="col-3">
+        <app-side-nav [navItems]="navigationItems" (navClicked)="onNavClick($event)"></app-side-nav>
+    </div>
+    <div class="col-9 row align-items-center justify-content-center">
+        <div>{{selectedNavItem}}</div>
+    </div>
+</div>
